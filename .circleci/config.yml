@@ -11,11 +11,11 @@ jobs:
 
       - run:
           name: build dependencies
-          command: bundle install
+          command: bundle2 install
 
       - run:
           name: build the jekyll site
-          command: bundle exec jekyll build
+          command: bundle2 exec jekyll build
 
       - run:
           name: notify build is finished
